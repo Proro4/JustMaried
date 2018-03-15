@@ -2812,16 +2812,7 @@ header {
       display: block;
       width: 100%;
       font-size: 21px;
-      padding-left: 42px;
       position: relative; }
-      .title h1 span:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 44px;
-        height: 1px;
-        background: white;
-        top: 11px; }
   .title a.button {
     border-color: #4592df;
     background: #4592df;
@@ -3683,10 +3674,6 @@ section {
   .title h1 {
     font-size: 34px;
     padding: 0 15px; }
-  .title h1 span {
-    padding-left: 13px; }
-  .title h1 span:before {
-    width: 15px; }
   .title a.button {
     margin-left: 15px; }
   .hot-it-works__blocks__inner {
