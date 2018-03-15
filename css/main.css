@@ -2531,7 +2531,8 @@ table {
 html {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  overflow-x: hidden; }
 
 h2 {
   padding: 0;
@@ -3343,7 +3344,7 @@ section {
         font-size: 14px; }
 
 .humans {
-  margin-top: 110px;
+  padding-top: 110px;
   text-align: center;
   background: #fbfafa; }
   .humans h2 {
@@ -3584,6 +3585,9 @@ section {
     margin-top: 25px; } }
 
 @media screen and (max-width: 991px) {
+  .owl-nav,
+  .info__block-left__verical-text {
+    display: none; }
   .title h1 {
     font-size: 64px; }
   .ceremony__slider__block__img {
@@ -3662,7 +3666,7 @@ section {
   .comments__block {
     margin: 0; }
   .humans {
-    margin-top: 60px; } }
+    padding-top: 60px; } }
 
 @media screen and (max-width: 550px) {
   .humans__block__img {
