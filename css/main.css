@@ -2546,6 +2546,10 @@ header {
   float: left;
   width: 100%;
   position: relative; }
+  header.head_blue {
+    background: #4592df; }
+    header.head_blue:before {
+      display: none; }
   header:before {
     content: '';
     position: absolute;
@@ -2576,8 +2580,8 @@ header {
   .menu li {
     display: inline-block; }
     .menu li a {
-      margin: 0 3.8px;
-      padding: 0 9px;
+      margin: 0 12px;
+      padding: 0 0 10px 0px;
       font-family: 'Lato-Light';
       color: white;
       font-size: 14px;
@@ -2591,6 +2595,8 @@ header {
         color: #b3d9fe;
         outline: none;
         border: 0; }
+      .menu li a.active {
+        border-bottom: 1px solid white; }
 
 .button,
 .menu li a.button {
@@ -3183,6 +3189,121 @@ section {
         color: white;
         font-size: 14px; }
 
+.humans {
+  margin-top: 110px;
+  text-align: center;
+  background: #fbfafa; }
+  .humans h2 {
+    margin-bottom: 35px; }
+  .humans__span {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 70px;
+    font-size: 21px;
+    font-family: 'CormorantGaramond-Light'; }
+  .humans__block {
+    margin-bottom: 80px;
+    width: 100%; }
+    .humans__block__img {
+      height: 350px;
+      position: relative;
+      padding: 0; }
+      .humans__block__img:before {
+        content: '';
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #4592df; }
+      .humans__block__img img {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        position: relative;
+        z-index: 1; }
+    .humans__block__text {
+      text-align: left;
+      background: white;
+      float: right;
+      width: 105%;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 70px 45px;
+      margin-top: 25px;
+      position: relative;
+      z-index: 2; }
+      .humans__block__text h5 {
+        font-size: 24px;
+        font-family: 'CormorantGaramond-Light';
+        margin: 0 0 20px 0; }
+      .humans__block__text span {
+        font-size: 19px;
+        font-family: 'CormorantGaramond-Light';
+        color: #4592df; }
+      .humans__block__text p {
+        font-size: 15px;
+        font-family: 'Lato-Light';
+        line-height: 1.5;
+        margin-bottom: 0; }
+
+.ceremony-news h2 {
+  position: relative;
+  bottom: 35px; }
+
+.ceremony-news__span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: 'CormorantGaramond-Light';
+  font-size: 21px;
+  margin-bottom: 70px; }
+  .ceremony-news__span span {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    display: block;
+    font-size: 18px; }
+
+.ceremony-news .ceremony__slider__block {
+  text-align: left; }
+  .ceremony-news .ceremony__slider__block span {
+    font-family: 'CormorantGaramond-Light';
+    color: #4592df;
+    font-size: 19px;
+    font-style: italic;
+    display: block;
+    margin-top: 15px; }
+    .ceremony-news .ceremony__slider__block span.ceremony__slider__block__cash {
+      font-size: 18px;
+      font-family: 'Lato-Light';
+      font-style: normal;
+      text-transform: uppercase;
+      margin: 0 0 15px 0; }
+
+.news-info {
+  text-align: center;
+  padding-top: 70px;
+  border-top: 1px solid #e5e5e5;
+  position: relative;
+  margin-bottom: 120px; }
+  .news-info:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -41.5px;
+    width: 165px;
+    margin-left: -82.5px;
+    height: 83px;
+    background: url("../images/elipse_2.png") no-repeat center, white; }
+  .news-info p {
+    font-size: 21px;
+    font-family: 'CormorantGaramond-Light';
+    padding: 0 75px;
+    line-height: 1.4;
+    opacity: 0.5; }
+
 .footer {
   float: left;
   width: 100%;
@@ -3339,6 +3460,19 @@ section {
     display: block; } }
 
 @media screen and (max-width: 768px) {
+  .news-info p {
+    padding: 0; }
+  .humans__block__img {
+    height: 300px; }
+    .humans__block__img:before {
+      display: none; }
+    .humans__block__img img {
+      max-width: 300px; }
+  .humans__block__text {
+    width: 100%;
+    padding: 30px 15px; }
+  .humans__block {
+    width: inherit; }
   .mob_d {
     display: block; }
   .comments__block__left.mob_d {
@@ -3371,9 +3505,22 @@ section {
   .info__block-right__text p {
     padding: 0 30px; }
   .comments__block {
-    margin: 0; } }
+    margin: 0; }
+  .humans {
+    margin-top: 60px; } }
 
 @media screen and (max-width: 550px) {
+  .humans__block__img {
+    padding: 0 15px; }
+    .humans__block__img img {
+      max-width: 280px; }
+  .ceremony-news__span {
+    padding: 0 15px; }
+  .news-info p {
+    font-size: 19px;
+    padding: 15px; }
+  .news-info {
+    margin-bottom: 60px; }
   .title h1 {
     font-size: 34px;
     padding: 0 15px; }
